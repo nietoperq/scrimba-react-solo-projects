@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #23252C;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+
+.card {
+  background-color: #1A1B21;
+  width: 320px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-picture {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.info-name {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 20px 0 0 0;
+}
+
+.info-title {
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+  color: #F3BF99;
+  margin: 5px;
+}
+
+.info-website {
+  font-size: 10px;
+  line-height: 150%;
+  color: #F5F5F5;
+  margin: 5px;
+}
+
+.info-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #374151;
+  width: 250px;
+  height: 34px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.info-button:active {
+  scale: 0.98;
+}
+
+.info-button img {
+  margin: 0 5px;
+}
+
+.description {
+  padding: 0 36px;
+}
+
+.description h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #F5F5F5;
+  margin: 20px 0 5px 0;
+}
+
+.description p {
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #DCDCDC;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #161619;
+  height: 64px;
+  margin-top: 30px;
+}
+
+.footer-link {
+  margin: 10px;
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  filter: brightness(150%);
+}
