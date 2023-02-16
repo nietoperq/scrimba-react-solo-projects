@@ -1,4 +1,4 @@
-function Description() {
+function About() {
     return (
         <section className="description">
             <h2>About</h2>
@@ -8,4 +8,4 @@ function Description() {
     );
 }
 
-export default Description;
+export default About;
