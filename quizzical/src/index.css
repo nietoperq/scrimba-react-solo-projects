@@ -11,15 +11,20 @@ body {
   margin: 0;
 }
 
+main {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 .welcome-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   color: #293264;
 }
 
@@ -90,18 +95,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
   color: #293264;
+}
+
+.question-list {
+  overflow: auto;
+  width: 400px;
+  max-width: 100%;
 }
 
 .question-container {
   border-bottom: 1px solid #DBDEF0;
   margin: 10px 0;
-  padding-bottom: 15px;
-  width: 400px;
+  padding: 0 10px 15px 10px;
+
 }
 
 .question {

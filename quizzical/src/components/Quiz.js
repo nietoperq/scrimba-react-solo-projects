@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { nanoid } from 'nanoid';
 import ReactConfetti from 'react-confetti';
 import Question from './Question';
-import blobBlue from './../img/blob-blue.png'
-import blobYellow from './../img/blob-yellow.png'
+
 
 function Quiz() {
     const [questions, setQuestions] = useState([]);
@@ -88,11 +87,11 @@ function Quiz() {
     return (
         <div className="quiz-screen">
             {checkScore && score === 5 && <ReactConfetti />}
-            {questionList}
+            <div className="question-list">
+                {questionList}
+            </div>
             {checkScore && scoreText}
             <button className="button small-button" onClick={toggleCheckScore}>{checkScore ? "Play again" : "Check answers"}</button>
-            <img className="blob blob-blue" src={blobBlue} alt="" />
-            <img className="blob blob-yellow" src={blobYellow} alt="" />
         </div>
     );
 }
